@@ -1,0 +1,12 @@
+.content_page{
+  display: flex;
+}
+.content{
+  flex-grow: 1;
+  padding: 10px 50px;
+  width: calc(100% - 300px - 100px);
+}
+
+.select_wrapper {
+  margin-top: 20px;
+}

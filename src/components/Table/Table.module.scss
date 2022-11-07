@@ -1,0 +1,30 @@
+.Table{
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+.table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.col {
+  color: var(--text-color-primary);
+  font-size: 12px;
+  padding: 15px;
+  font-weight: 700;
+}
+
+.row {
+  color: var(--text-color-primary);
+  font-size: 12px;
+  padding: 15px;
+  font-weight: 400;
+}
+
+.month {
+  color: var(--text-color-primary);
+  font-size: 14px;
+  font-weight: 400;
+}

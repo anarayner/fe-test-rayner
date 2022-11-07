@@ -1,0 +1,13 @@
+.Navbar{
+  width: 100%;
+  height: var(--navbar-height);
+  background: var(--inverted-bg-color);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo{
+  height: 20px;
+}

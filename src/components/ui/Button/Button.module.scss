@@ -1,0 +1,22 @@
+.Button{
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid var(--border-color-secondary);
+  background: var(--bg-color);
+}
+
+.size_s {
+  font-size: 11px;
+  padding: 3px 10px;
+  font-weight: 300;
+}
+
+.size_m {
+  font-size: 14px;
+  padding: 8px 15px;
+}
+
+.size_l {
+  font-size: 18px;
+  padding: 10px 20px;
+}

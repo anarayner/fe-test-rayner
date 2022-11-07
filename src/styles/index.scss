@@ -1,0 +1,12 @@
+@import "variables/global";
+@import "reset";
+
+:root{
+    font-family: var(--font-family-main);
+}
+
+.app{
+    font: var(--font-m);
+    background: var(--bg-color);
+    min-height: 100vh;
+}
