@@ -12,7 +12,7 @@ export const fetchData = createAsyncThunk<
         const { extra, rejectWithValue } = thunkApi;
 
         try {
-            const response = await extra.api.get<Item>('/data');
+            const response = await extra.api.get<Item>('https://fake-api-q16g.onrender.com/data');
 
             if (!response.data) {
                 throw new Error();
