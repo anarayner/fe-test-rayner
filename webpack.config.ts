@@ -1,5 +1,5 @@
 import * as path from 'path';
-import webpack = require('webpack');
+import webpack from 'webpack';
 import { buildWebpackConfig } from './config/build/buildWebpackConfig';
 import { BuildEnv, BuildPath } from './config/build/types/config';
 
@@ -13,7 +13,7 @@ export default (env: BuildEnv) => {
 
     const mode = env.mode || 'development';
     const port = env.port || 4000;
-    const apiUrl = env.apiUrl || 'http://localhost:8000';
+    const apiUrl = env.apiUrl || 'https://fake-api-q16g.onrender.com/data';
 
     const isDev = mode === 'development';
 
