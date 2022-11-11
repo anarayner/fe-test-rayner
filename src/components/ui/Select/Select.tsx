@@ -13,6 +13,7 @@ interface SelectProps {
     options?: SelectOption[];
     value?: string;
     onChange?: (value: string) => void;
+    setVal?: (value: string) => void;
 }
 
 export const Select = memo((props: SelectProps) => {
@@ -22,6 +23,7 @@ export const Select = memo((props: SelectProps) => {
         options,
         value ,
         onChange,
+        setVal,
     } = props;
 
     const optionList = useMemo(() => options?.map((opt) => (
@@ -35,8 +37,9 @@ export const Select = memo((props: SelectProps) => {
     )), [options]);
 
     function onChangeHandler(e: ChangeEvent<HTMLSelectElement>) {
-        if (onChange) {
+        if (onChange && setVal) {
             onChange(e.target.value);
+            setVal(e.target.value)
         }
     }
 

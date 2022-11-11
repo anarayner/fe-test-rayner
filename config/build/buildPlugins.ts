@@ -24,9 +24,9 @@ export function buildPlugins({
 
     ];
 
-    // if (isDev) {
-    //     plugins.push(new ReactRefreshWebpackPlugin());
-    // }
+    if (isDev) {
+        plugins.push(new ReactRefreshWebpackPlugin());
+    }
 
     return plugins;
 }

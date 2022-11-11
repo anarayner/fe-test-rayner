@@ -29,6 +29,9 @@ const App = () =>{
     const error = useSelector(getDataError);
     const graphValue = useSelector(getDataSelect)
 
+    const [val, setVal] = useState(graphValue)
+    console.log('val', val)
+
     const options: SelectOption[] = [
         {value: 'retailSales', content: 'Retail sales'},
         {value: 'wholesaleSales', content: 'Wholesale sales'},
@@ -37,6 +40,7 @@ const App = () =>{
 
     const onChangeSelectOption = useCallback((value: string) => {
         dispatch(itemActions.updateData(value));
+        console.log(onChangeSelectOption)
     }, [dispatch]);
 
 
@@ -58,13 +62,13 @@ const App = () =>{
                         options={options}
                         className={cls.select_wrapper}
                         onChange={onChangeSelectOption}
+                        setVal={setVal}
                     />
                     <Chart data={data}
                             min={-3000000}
                             max={5000000}
-                            yAxisKey={graphValue}
+                            yAxisKey={val}
                     />
-
                     <Table item={data}/>
                 </div>
             </div>
